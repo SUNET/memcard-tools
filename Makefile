@@ -1,5 +1,5 @@
-CC=cc
-CFLAGS=-pthread -I/usr/include/PCSC -c
+CC=gcc
+CFLAGS=-pthread -I/usr/include/PCSC -c -std=c99
 LDFLAGS=-lpcsclite
  
 all: main.o main
