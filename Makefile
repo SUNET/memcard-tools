@@ -1,6 +1,7 @@
 CC=gcc
 CFLAGS=-pthread -I/usr/include/PCSC -c -std=c99
 LDFLAGS=-lpcsclite
+INSTALL=install
  
 all: main.o main
  
@@ -12,3 +13,6 @@ main.o: main.c
  
 clean:
 	rm -rf *.o mcrw
+
+install:
+	$(INSTALL) mcrw /usr/bin/
