@@ -9,6 +9,7 @@
 #include <errno.h>
 #include <assert.h>
 #include <stdarg.h>
+#include <getopt.h>
  
 #define CHECK(f, rv) \
     if (SCARD_S_SUCCESS != rv) \
