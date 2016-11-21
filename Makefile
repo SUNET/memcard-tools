@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-pthread -I/usr/include/PCSC -c -std=c99
+CFLAGS=-pthread -I/usr/include/PCSC -c -std=gnu99
 LDFLAGS=-lpcsclite
 INSTALL=install
  
