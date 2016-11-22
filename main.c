@@ -116,19 +116,19 @@ int main(int argc, char *argv[]) {
        case 'o':
           offset = strtol(optarg, NULL, 16);
           if (offset > 256) {
-             err(3, "Invalid argument to -o. Must be < 256.\n");
+             err(3, "Invalid argument to -o. Must be hex < 256.\n");
           }
           break;
        case 'l':
           length = strtol(optarg, NULL, 16);
           if (length > 256) {
-             err(3, "Invalid argument to -l. Must be < 256.\n");
+             err(3, "Invalid argument to -l. Must be hex < 256.\n");
           }
           break;
        case 'C':
           writeCode = strtol(optarg, NULL, 16);
           if (writeCode > 0xffffff) {
-             err(3, "Invalid argument to -C. Must be < 0xffffff.\n");
+             err(3, "Invalid argument to -C. Must be hex < 0xffffff.\n");
           }
        default:
           usage(3);
